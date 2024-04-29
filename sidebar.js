@@ -18,7 +18,7 @@ document.write(`
                     </span>
                     <span class="link-text">How to use</span>
                 </a>
-                <a class="nav-link" href="./dcumentation.html">
+                <a class="nav-link" href="./documentation.html">
                     <span class="material-symbols-outlined">
                         description
                     </span>
@@ -28,7 +28,7 @@ document.write(`
                     <span class="material-symbols-outlined">
                         quick_reference
                     </span>
-                    About
+                    <span class="link-text">About</span>
                 </a>
             </div>
         </div>
@@ -39,7 +39,7 @@ document.write(`
                     <span class="material-symbols-outlined">
                         help
                     </span>
-                    Help
+                    <span class="link-text">Help</span>
                 </a>
             </div>
         </div>

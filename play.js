@@ -183,6 +183,7 @@ function input(event){
 }
 
 Draw();
+
 window.addEventListener("resize", Draw);
 
 function hint() {
@@ -344,4 +345,5 @@ function submit() {
     }
     check();
     solveSolutionGrid();
+    Draw();
 }

@@ -4,17 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <title>How To Use</title>
+    <link rel="stylesheet" href="styles/howToUse.css">
+    <title>Website Explanation</title>
 </head>
 <body>
     <script src="collapsedSidebar.js"></script>
     <script src="sidebar.js"></script>
-    <div id="content-div">
-        <p>a
+    <div class="content-div">
+        <h2>Home Page (index.html)</h2>
+        <p class="island">This is the landing page of this website.
+            It is the first thing you see when you open this website.
+            It is also hidden under the logo, so try pressing it!
         </p>
-        <hr>
-        <p>Hot goth mommy je napravila ovaj sudoku</p>
+
+        <h2>Play Page (play.html)</h2>
+        <p class="island">This page allows users to interact with a Sudoku puzzle.
+            Here, you can solve, check, submit, reset, wipe the grid or get a hint!
+            Below are the buttons available on this page with their more detailed
+            explanations:
+        </p>
+        <table class="island">
+            <tr>
+                <td><strong>Button</strong></td>
+                <td><strong>Description</strong></td>
+            </tr>
+            <tr>
+                <td>Check</td>
+                <td>Checks if the current state of the Sudoku puzzle is correctly solved.
+                    In case it is, this button will turn green, and in case it isn't, it
+                    will turn red.
+                </td>
+            </tr>
+            <tr>
+                <td>Submit</td>
+                <td>This button allows you to make your own grid! You can add on the
+                    already existing grid or you can use the button WIPE to remove any
+                    pre-existing numbers and write your own! When  you're done creating
+                    your grid, click this button and get to solving!
+                    This button will automatically run through the code of the check()
+                    button to make sure no numbers are clashing.
+                </td>
+            </tr>
+            <tr>
+                <td>Hint</td>
+                <td>Provides a hint by filling in one empty cell with a correct number.
+                    If a cell is cell-ected, it will put a number inside that cell. if
+                    it isn't, it will put a number in a random empty cell inside the grid.
+                </td>
+            </tr>
+            <tr>
+                <td>Solve</td>
+                <td>Automatically solves the Sudoku puzzle</td>
+            </tr>
+            <tr>
+                <td>Reset</td>
+                <td>Resets the sudoku puzzle to its initial state, removing all the numbers
+                    you put in and the ones the hint button did.
+                </td>
+            </tr>
+            <tr>
+                <td>Wipe</td>
+                <td>Clears the entire Sudoku puzzle grid, including the pre-written
+                    numbers, enabling you to make your own grid! Make sure to press the
+                    SUBMIT button to submit your grid so you can properly solve it!
+                </td>
+            </tr>
+        </table>
+
+        <h2>How To Use (howToUse.html)</h2>
+        <p class="island">Hey, that's the page you're on right now! The purpose of this
+            page is to help better understand the layout of this website and the
+            functions it contains.
+        </p>
+
+        <h2>Documentation (documentation.html)</h2>
+        <p class="island">This page contains a more formal and detailed description of
+            the whole website... located in a download link... under the big button.
+        </p>
+
+        <h2>About (about.html)</h2>
+        <p class="island">It provides a brief introduction to me, as in the author of the code that runs
+            the site you're currently viewing, and to this whole project.
+        </p>
+
+        <h2>Help (help.html)</h2>
+        <p class="island">This page is meant for helping you, the user, to understand
+            why is something not working. To be honest, I probably don't know the answer.
+        </p>
     </div>
 </body>
 </html>
