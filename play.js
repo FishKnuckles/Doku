@@ -210,12 +210,17 @@ function hint() {
 
 function check() {
     const checkButton = document.getElementById("check");
-    if(checkIfValid(grid) === true) {
+    const originalButtonColor = "#8E58B1";
+    if(checkIfValid(grid)) {
     checkButton.style.backgroundColor = "green";
     }
     else {
         checkButton.style.backgroundColor = "#C40000";
     }
+     // Restore the original button color after 3 seconds
+     setTimeout(() => {
+        checkButton.style.backgroundColor = originalButtonColor;
+    }, 1000);
 }
 
 function checkIfValid(passedGrid) {
