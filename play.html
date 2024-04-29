@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="./styles/play.css">
+    <title>Play</title>
+</head>
+<body>
+    <script src="collapsedSidebar.js"></script>
+    <script src="sidebar.js"></script>
+    <div id="content-div">
+        <div id="canvas-div">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="buttons-container">
+            <div id="buttons-div">
+                <button class="button-54" role="button" id="check" onclick="check()">Check!</button>
+                <button class="button-54" role="button" id="play" onclick="play()">Submit!</button>
+                <button class="button-54" role="button" id="help" onclick="hint()">Hint!</button>
+                <button class="button-54" role="button" id="solve" onclick="solve()">Solve!</button>
+                <button class="button-54" role="button" id="reset" onclick="reset()">Reset!</button>
+                <button class="button-54" role="button" id="wipe" onclick="wipe()">Wipe!</button>
+                <!--<button class="button-54" role="button" id="undo" onclick="undo()">Undo!</button>-->
+            </div>
+            <div id="button-description">
+                <p>Check if you correctly solved this sudoku!</p>
+                <p>Go on and play your freshly created sudoku!</p>
+                <p>Click here to get a hint!</p>
+                <p>Solve the sudoku grid!</p>
+                <p>Click this button to reset the sudoku grid!</p>
+                <p>Click this button to wipe the whole grid!</p>
+                <!--<p>Undo your last move!</p>-->
+            </div>
+        </div>
+    </div>
+    <script src="./play.js"></script>
+</body>
+</html>
